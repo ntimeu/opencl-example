@@ -33,8 +33,8 @@ int main(int argc, char **argv)
 
     po::options_description desc("Allowed options");
     desc.add_options()
-        ("help", "produce help message")
-        ("version", "Show version number")
+        ("help,h", "produce help message")
+        ("version,v", "Show version number")
         ("number,n",
          po::value<unsigned int>(&number)->default_value(N),
          "number of elements to treat")

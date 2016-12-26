@@ -10,6 +10,10 @@ $ cmake ..
 $ make
 $ ./src/example
 
+Please note that out-of-tree build is the only one with a correct .gitignore.
+In-tree build will pollute your workspace. In case of trouble, use
+git clean -fxd to clean your workspace.
+
 It has been tested on :
 * ArchLinux
 * Intel HD5200 Iris Pro
