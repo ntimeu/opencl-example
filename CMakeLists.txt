@@ -13,8 +13,4 @@ endif()
 find_package(OpenCL REQUIRED)
 find_package(Boost COMPONENTS program_options REQUIRED)
 
-add_definitions(-std=c++14)
-add_definitions(-Wall -Wextra -Werror -Wpedantic)
-add_definitions(-Wold-style-cast)
-
 add_subdirectory(src output)
